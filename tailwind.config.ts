@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,43 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        bamboo: {
+          50: '#f8f6f1',
+          100: '#e9e2cf',
+          200: '#d9cead',
+          300: '#c9ba8b',
+          400: '#b9a569',
+          500: '#a99147',
+          600: '#8a7739',
+          700: '#6c5d2c',
+          800: '#4d421e',
+          900: '#2f280f',
+        },
+        forest: {
+          50: '#ecf5ec',
+          100: '#c9e5c9',
+          200: '#a5d5a5',
+          300: '#82c482',
+          400: '#5eb45e',
+          500: '#3b943b',
+          600: '#2e762e',
+          700: '#225922',
+          800: '#163b16',
+          900: '#091e09',
+        },
+        cream: {
+          50: '#fdfcf9',
+          100: '#f7f3e9',
+          200: '#f0e9d9',
+          300: '#e9e0c8',
+          400: '#e3d6b8',
+          500: '#dccca7',
+          600: '#b0a486',
+          700: '#887d65',
+          800: '#5f5744',
+          900: '#372c22',
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +121,21 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' }
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'float': 'float 5s ease-in-out infinite'
+			},
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+        heading: ['Raleway', 'sans-serif']
+      }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
